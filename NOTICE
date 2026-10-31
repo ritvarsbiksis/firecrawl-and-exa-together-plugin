@@ -1,0 +1,73 @@
+firecrawl-and-exa-together
+==========================
+
+Plugin code (manifests, README, CHANGELOG): MIT License, see LICENSE.
+
+This plugin includes third-party material, listed below with its source and licence. Those files keep their
+original licences; the MIT licence in LICENSE does not replace them.
+
+The hosted MCP servers (mcp.firecrawl.dev, mcp.exa.ai) are services run by Firecrawl and Exa Labs. They are not
+distributed with this plugin. Use of them is subject to those providers' own terms.
+
+Firecrawl and Exa are trademarks of their owners. This plugin is not affiliated with or endorsed by Firecrawl
+(Mendable) or Exa Labs.
+
+
+1. skills/firecrawl/** and skills/firecrawl-search/**
+------------------------------------------------------
+
+Source:  https://github.com/firecrawl/cli (Firecrawl CLI agent skills)
+Via:     https://github.com/mppyxx/claude-power-pack (licence copy: licenses/firecrawl__skills.txt)
+Licence: ISC
+
+Modifications: relative links rewritten for this plugin's layout, attribution comments added, and guidance
+added to fall back to this plugin's `firecrawl` MCP server when the Firecrawl CLI is not installed.
+
+ISC License
+
+Copyright (c) Firecrawl
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+
+
+2. skills/exa-agent/** and skills/exa-search/**
+------------------------------------------------
+
+Source:  https://github.com/exa-labs/exa-mcp-server
+Commit:  15ffb50519e719dc791cdc750ce5ed1934c0a1ed
+Licence: MIT
+
+Modifications: the upstream `search` skill is renamed `exa-search` (directory and skill name); links rewritten
+for this plugin's layout; attribution comments added.
+
+MIT License
+
+Copyright (c) 2025 Exa Labs
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
