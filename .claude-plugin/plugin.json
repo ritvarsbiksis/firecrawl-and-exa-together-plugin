@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "firecrawl-exa",
+  "displayName": "Firecrawl + Exa",
+  "version": "0.1.0",
+  "description": "Connect Firecrawl and Exa to Claude at the same time: Exa to find things on the web, Firecrawl to fetch and work with pages. Both hosted MCP servers plus skills that route each web task to the right tool.",
+  "author": {
+    "name": "Ritvars Bikšis"
+  },
+  "repository": "https://github.com/ritvarsbiksis/firecrawl-and-exa-together-plugin",
+  "license": "MIT",
+  "keywords": [
+    "firecrawl",
+    "exa",
+    "web-search",
+    "scraping",
+    "crawling",
+    "research",
+    "mcp"
+  ],
+  "mcpServers": {
+    "firecrawl": {
+      "type": "http",
+      "url": "https://mcp.firecrawl.dev/v2/mcp",
+      "headers": {
+        "Authorization": "Bearer ${FIRECRAWL_API_KEY:-}"
+      }
+    },
+    "exa": {
+      "type": "http",
+      "url": "https://mcp.exa.ai/mcp?client=claude-code-plugin"
+    }
+  }
+}
